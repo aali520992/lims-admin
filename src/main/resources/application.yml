@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: lims-admin
+  profiles:
+    include: database
+    active: dev
+  cache:
+    cache-names: simple
+    type: simple
+
+server:
+  port: 8001
+  servlet:
+    
+    context-path: /lims

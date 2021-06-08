@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuanzili.lims.mapper.EquipmentRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tuanzili.lims.entity.EquipmentRecord">
+        <result column="id" property="id" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="deleted_date" property="deletedDate" />
+        <result column="creator_id" property="creatorId" />
+        <result column="updater_id" property="updaterId" />
+        <result column="type" property="type" />
+        <result column="balance" property="balance" />
+        <result column="number" property="number" />
+        <result column="reason" property="reason" />
+        <result column="is_repair" property="isRepair" />
+        <result column="maintain_data" property="maintainData" />
+        <result column="principal" property="principal" />
+        <result column="phone" property="phone" />
+        <result column="cost" property="cost" />
+        <result column="address" property="address" />
+        <result column="equipment_id" property="equipmentId" />
+        <result column="equipment_name" property="equipmentName" />
+        <result column="lab_id" property="labId" />
+        <result column="lab_name" property="labName" />
+        <result column="remark" property="remark" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="BaseColumnList">
+        id,
+        created_date,
+        updated_date,
+        deleted_date,
+        creator_id, updater_id, type, balance, number, reason, is_repair, maintain_data, principal, phone, cost, address, equipment_id, equipment_name, lab_id, lab_name, remark
+    </sql>
+</mapper>

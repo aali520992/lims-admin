@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuanzili.lims.mapper.ProjectMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tuanzili.lims.entity.Project">
+        <result column="id" property="id" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="deleted_date" property="deletedDate" />
+        <result column="name" property="name" />
+        <result column="academic_year" property="academicYear" />
+        <result column="semester" property="semester" />
+        <result column="status" property="status" />
+        <result column="category" property="category" />
+        <result column="role" property="role" />
+        <result column="property" property="property" />
+        <result column="period" property="period" />
+        <result column="credit_hour" property="creditHour" />
+        <result column="scale_marks" property="scaleMarks" />
+        <result column="report_marks" property="reportMarks" />
+        <result column="class_marks" property="classMarks" />
+        <result column="teach_meth" property="teachMeth" />
+        <result column="remark" property="remark" />
+        <result column="school_date" property="schoolDate" />
+        <result column="explain" property="explain" />
+        <result column="synopsis" property="synopsis" />
+        <result column="content" property="content" />
+        <result column="effect" property="effect" />
+        <result column="require" property="require" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="BaseColumnList">
+        id,
+        created_date,
+        updated_date,
+        deleted_date,
+        name, academic_year, semester, status, category, role, property, period, credit_hour, scale_marks, report_marks, class_marks, teach_meth, remark, school_date, explain, synopsis, content, effect, require
+    </sql>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuanzili.lims.mapper.LabMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tuanzili.lims.entity.Lab">
+        <result column="id" property="id" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="deleted_date" property="deletedDate" />
+        <result column="creator_id" property="creatorId" />
+        <result column="updater_id" property="updaterId" />
+        <result column="name" property="name" />
+        <result column="status" property="status" />
+        <result column="address" property="address" />
+        <result column="introduce" property="introduce" />
+        <result column="college_id" property="collegeId" />
+        <result column="admin_id" property="adminId" />
+        <result column="remark" property="remark" />
+        <result column="college_name" property="collegeName" />
+        <result column="admin_name" property="adminName" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="BaseColumnList">
+        id,
+        created_date,
+        updated_date,
+        deleted_date,
+        creator_id, updater_id, name, status, address, introduce, college_id, admin_id, remark, college_name, admin_name
+    </sql>
+</mapper>

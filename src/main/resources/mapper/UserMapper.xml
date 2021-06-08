@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuanzili.lims.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tuanzili.lims.entity.User">
+        <result column="id" property="id" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="deleted_date" property="deletedDate" />
+        <result column="creator_id" property="creatorId" />
+        <result column="updater_id" property="updaterId" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="status" property="status" />
+        <result column="role" property="role" />
+        <result column="avatar" property="avatar" />
+        <result column="nickname" property="nickname" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="birthday" property="birthday" />
+        <result column="compellation" property="compellation" />
+        <result column="id_num" property="idNum" />
+        <result column="ethnic" property="ethnic" />
+        <result column="job_title" property="jobTitle" />
+        <result column="education" property="education" />
+        <result column="class_fee" property="classFee" />
+        <result column="literary_course" property="literaryCourse" />
+        <result column="native_place" property="nativePlace" />
+        <result column="politics_status" property="politicsStatus" />
+        <result column="address" property="address" />
+        <result column="linkman" property="linkman" />
+        <result column="linkman_phone" property="linkmanPhone" />
+        <result column="college_id" property="collegeId" />
+        <result column="college_name" property="collegeName" />
+        <result column="room_id" property="roomId" />
+        <result column="room_name" property="roomName" />
+        <result column="remark" property="remark" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="BaseColumnList">
+        id,
+        created_date,
+        updated_date,
+        deleted_date,
+        creator_id, updater_id, username, password, status, role, avatar, nickname, phone, email, birthday, compellation, id_num, ethnic, job_title, education, class_fee, literary_course, native_place, politics_status, address, linkman, linkman_phone, college_id, college_name, room_id, room_name, remark
+    </sql>
+</mapper>

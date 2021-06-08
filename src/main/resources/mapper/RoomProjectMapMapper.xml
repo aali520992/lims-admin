@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuanzili.lims.mapper.RoomProjectMapMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tuanzili.lims.entity.RoomProjectMap">
+        <result column="id" property="id" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="deleted_date" property="deletedDate" />
+        <result column="creator_id" property="creatorId" />
+        <result column="updater_id" property="updaterId" />
+        <result column="project_id" property="projectId" />
+        <result column="class_id" property="classId" />
+        <result column="remark" property="remark" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="BaseColumnList">
+        id,
+        created_date,
+        updated_date,
+        deleted_date,
+        creator_id, updater_id, project_id, class_id, remark
+    </sql>
+</mapper>

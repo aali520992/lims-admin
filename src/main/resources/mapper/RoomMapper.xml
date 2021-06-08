@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuanzili.lims.mapper.RoomMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tuanzili.lims.entity.Room">
+        <result column="id" property="id" />
+        <result column="created_date" property="createdDate" />
+        <result column="updated_date" property="updatedDate" />
+        <result column="deleted_date" property="deletedDate" />
+        <result column="creator_id" property="creatorId" />
+        <result column="updater_id" property="updaterId" />
+        <result column="academic_year" property="academicYear" />
+        <result column="name" property="name" />
+        <result column="synopsis" property="synopsis" />
+        <result column="address" property="address" />
+        <result column="remark" property="remark" />
+        <result column="college_id" property="collegeId" />
+        <result column="college_name" property="collegeName" />
+        <result column="profession_id" property="professionId" />
+        <result column="profession_name" property="professionName" />
+        <result column="teacher_id" property="teacherId" />
+        <result column="teacher_name" property="teacherName" />
+        <result column="class_teacher_id" property="classTeacherId" />
+        <result column="class_teacher_name" property="classTeacherName" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="BaseColumnList">
+        id,
+        created_date,
+        updated_date,
+        deleted_date,
+        creator_id, updater_id, academic_year, name, synopsis, address, remark, college_id, college_name, profession_id, profession_name, teacher_id, teacher_name, class_teacher_id, class_teacher_name
+    </sql>
+</mapper>
