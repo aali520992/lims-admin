@@ -13,6 +13,10 @@ import org.springframework.context.annotation.Configuration
 @MapperScan("com.tuanzili.lims.mapper*")
 class MybatisPlusConfig {
 
+
+
+
+
     /**
      * mybatis-plus分页插件<br></br>
      * 文档：http://mp.baomidou.com<br></br>
